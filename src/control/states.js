@@ -200,6 +200,11 @@ const states = {
     store.dispatch(actions.points(point));
     if (point > 0 && point > store.getState().get('max')) {
       store.dispatch(actions.max(point));
+      try {
+        localStorage.setItem('MATTEA_TETRIS_XBOX_HIGH_SCORE', String(point));
+      } catch (e) {
+        // Gameplay continues when browser storage is disabled.
+      }
     }
   },
 };
