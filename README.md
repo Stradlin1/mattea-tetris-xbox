@@ -1,10 +1,28 @@
 # Mattea Tetris — Xbox / Gamepad Edition
 
+## 在线游玩 / Play online
+
+**[点击这里开始游戏 · Play Mattea Tetris Xbox](https://stradlin1.github.io/mattea-tetris-xbox/)**
+
+游戏链接：<https://stradlin1.github.io/mattea-tetris-xbox/>
+
+- **部署状态：成功。** GitHub Pages 已开启，2026-11-22 的 [Pages 构建和部署](https://github.com/Stradlin1/mattea-tetris-xbox/actions/runs/45034981922) 显示 `build`、`deploy` 全部成功。
+- **游戏方式：** 电脑浏览器直接打开，支持键盘和符合浏览器 Standard Gamepad 映射的 Xbox 布局手柄；这是网页游戏，不是 Xbox 主机原生应用。
+- **键盘：** A/D 或 ←/→ 左右，J/K/W 旋转，S/↓ 加速下落，Space 直接落底，R 重开，P 暂停，M 切换音效。
+- **手柄：** 左摇杆或方向键移动，A 落底，B/X/LB/RB 旋转，Start 暂停，Back/View 重开。
+- **存档：** 每局从 Level 0 开始；历史最高分保存在本浏览器的本地存储，清除站点数据可能使记录丢失。
+
+> 部署成功不代表所有实体手柄均已完成兼容性测试。若页面暂未更新，稍后刷新页面；若手柄未显示连接状态，先连接手柄并按一次按键。
+
+[查看源代码](https://github.com/Stradlin1/mattea-tetris-xbox) · [Pages 部署记录](https://github.com/Stradlin1/mattea-tetris-xbox/actions/runs/45034981922)
+
+---
+
 This repository is a separate controller-enabled edition of [mattea-tetris](https://github.com/Stradlin1/mattea-tetris). The original repository is unchanged. The existing Tetris gameplay, React/Redux interface, sound effects, scoring, and BGM player are retained.
 
 ## Play
 
-The ready-to-serve site is in `docs/`. To publish it, enable **Settings → Pages → Deploy from a branch → main → /docs** on GitHub.
+The live site is published from the `docs/` directory with GitHub Pages. **[Play online](https://stradlin1.github.io/mattea-tetris-xbox/)**. To restore publishing if settings are changed, go to **Settings → Pages → Deploy from a branch → main → /docs**.
 
 ### Keyboard
 
