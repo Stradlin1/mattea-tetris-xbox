@@ -8,7 +8,7 @@
 
 - **部署状态：成功。** GitHub Pages 已开启，2026-11-22 的 [Pages 构建和部署](https://github.com/Stradlin1/mattea-tetris-xbox/actions/runs/45034981922) 显示 `build`、`deploy` 全部成功。
 - **游戏方式：** 电脑浏览器直接打开，支持键盘和符合浏览器 Standard Gamepad 映射的 Xbox 布局手柄；这是网页游戏，不是 Xbox 主机原生应用。
-- **键盘：** A/D 或 ←/→ 左右，J/K/W 旋转，S/↓ 加速下落，Space 直接落底，R 重开，P 暂停，M 切换音效。
+- **键盘：** A/D 或 ←/→ 左右，J/K/W/5（含小键盘 5）旋转，S/↓ 加速下落，Space 直接落底，R 重开，P 暂停，M 切换音效。
 - **手柄：** 左摇杆或方向键移动，A 落底，B/X/LB/RB 旋转，Start 暂停，Back/View 重开。
 - **存档：** 每局从 Level 0 开始；历史最高分保存在本浏览器的本地存储，清除站点数据可能使记录丢失。
 
@@ -29,7 +29,7 @@ The live site is published from the `docs/` directory with GitHub Pages. **[Play
 | Action | Keys |
 | --- | --- |
 | Move left / right | A / D or ← / → |
-| Rotate | J / K / W (all rotate clockwise, as in original gameplay) |
+| Rotate | J / K / W / 5 / Numpad 5 (all rotate clockwise, as in original gameplay) |
 | Soft drop | S or ↓ |
 | Hard drop | Space |
 | Restart | R |
@@ -66,7 +66,7 @@ The shipped `docs/` site can be served statically. The original project's older 
 
 Manual checklist:
 1. Open the published page and start using Space or A on a paired controller.
-2. Confirm D-pad/stick direction, rotation, soft and hard drop, pause, restart, and keyboard actions.
+2. Confirm D-pad/stick direction, rotation, soft and hard drop, pause, restart, and keyboard actions, including rotation using both 5 keys.
 3. Reach a higher level, press R, and verify the next round shows Level 0.
 4. Beat the high score, reload the page, and confirm it persists; restart and verify best score remains.
 

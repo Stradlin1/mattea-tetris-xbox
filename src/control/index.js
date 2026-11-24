@@ -8,6 +8,8 @@ const keyboard = {
   87: 'rotate',
   74: 'rotate', // J
   75: 'rotate', // K // W
+  53: 'rotate', // 5 (main keyboard)
+  101: 'rotate', // 5 (numeric keypad)
   65: 'left',
   37: 'left', // Left Arrow   // A
   83: 'down',
@@ -24,12 +26,14 @@ let keydownActive;
 
 const boardKeys = Object.keys(keyboard).map(e => parseInt(e, 10));
 
+const keyCode = e => (e.code === 'Numpad5' ? 101 : e.keyCode);
+
 const keyDown = (e) => {
-  if (e.metaKey || e.ctrlKey || e.altKey || boardKeys.indexOf(e.keyCode) === -1) {
+  if (e.metaKey || e.ctrlKey || e.altKey || boardKeys.indexOf(keyCode(e)) === -1) {
     return;
   }
   e.preventDefault();
-  const type = keyboard[e.keyCode];
+  const type = keyboard[keyCode(e)];
   if (type === keydownActive) {
     return;
   }
@@ -38,11 +42,11 @@ const keyDown = (e) => {
 };
 
 const keyUp = (e) => {
-  if (e.metaKey || e.ctrlKey || e.altKey || boardKeys.indexOf(e.keyCode) === -1) {
+  if (e.metaKey || e.ctrlKey || e.altKey || boardKeys.indexOf(keyCode(e)) === -1) {
     return;
   }
   e.preventDefault();
-  const type = keyboard[e.keyCode];
+  const type = keyboard[keyCode(e)];
   if (type === keydownActive) {
     keydownActive = '';
   }
